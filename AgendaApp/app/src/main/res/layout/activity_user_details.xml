@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:paddingTop="@dimen/user_margin">
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/layout_header"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent="50%"
         android:background="@color/green">
 
         <ImageView
@@ -79,4 +80,4 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_header"/>
 
-</RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
