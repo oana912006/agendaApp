@@ -271,7 +271,7 @@ public class User implements Serializable {
             this.value = value;
         }
     }
-    class Picture {
+    public class Picture {
         private String large,medium, thumbnail;
 
         public String getLarge() {

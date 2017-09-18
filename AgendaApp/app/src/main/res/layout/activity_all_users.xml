@@ -2,16 +2,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:paddingTop="@dimen/user_margin">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/layout_header"
-        android:orientation="horizontal"
+        android:background="@color/red"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title_users"
+            android:text="@string/users"
+            android:textSize="26sp"
+            android:layout_toRightOf="@id/menu"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:src="@drawable/search"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/lw_movies"

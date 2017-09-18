@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.oanastefanescu.agendaapp.R;
 import com.feed.entities.User;
 import com.feed.views.CustomDetails;
+import com.squareup.picasso.Picasso;
 
 /**
  * UsersAdapter is adapter used for holding information of each user
@@ -84,6 +85,10 @@ public class UsersAdapter extends ArrayAdapter<User> implements Filterable {
 		if (user != null) {
 			holder.txtNameFirst.setText(((com.feed.entities.User.Name)user.getName()).getFirst());
 			holder.txtNameLast.setText(((com.feed.entities.User.Name)user.getName()).getLast());
+			Picasso.with(activity)
+					.load(((com.feed.entities.User.Picture)user.getPicture()).getThumbnail())
+					.placeholder(R.drawable.ic_launcher)
+					.into(holder.imgAvatar);
 		}
 
 		return v;
