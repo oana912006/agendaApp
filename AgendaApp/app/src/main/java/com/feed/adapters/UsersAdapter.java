@@ -88,6 +88,7 @@ public class UsersAdapter extends ArrayAdapter<User> implements Filterable {
 			Picasso.with(activity)
 					.load(((com.feed.entities.User.Picture)user.getPicture()).getThumbnail())
 					.placeholder(R.drawable.ic_launcher)
+					.transform(new RoundedCornersTransform())
 					.into(holder.imgAvatar);
 		}
 

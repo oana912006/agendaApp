@@ -137,7 +137,7 @@ public class User implements Serializable {
         this.dob = dob;
     }
 
-    class Login{
+    class Login  implements Serializable {
         String username, password, salt, md5, sha1,sha256;
 
         public String getUsername() {
@@ -189,7 +189,7 @@ public class User implements Serializable {
         }
     }
 
-    public class Name{
+    public class Name  implements Serializable {
         String title, first, last;
 
         public String getTitle() {
@@ -217,7 +217,7 @@ public class User implements Serializable {
         }
     }
 
-    class Location{
+    class Location  implements Serializable {
         private String street, city, state, postcode;
 
         public String getStreet() {
@@ -252,7 +252,7 @@ public class User implements Serializable {
             this.postcode = postcode;
         }
     }
-    class Id{
+    class Id  implements Serializable {
         private String name, value;
 
         public String getName() {
@@ -271,7 +271,7 @@ public class User implements Serializable {
             this.value = value;
         }
     }
-    public class Picture {
+    public class Picture  implements Serializable  {
         private String large,medium, thumbnail;
 
         public String getLarge() {

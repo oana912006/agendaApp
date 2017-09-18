@@ -180,6 +180,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ArrayList<User> usersList = ((UsersAdapter) lwUsers
                         .getAdapter()).getAllUsers();
                 Intent intent = new Intent(activity, ActivityUserDetails.class);
+                intent.putExtra("user", usersList.get(pos));
                 startActivity(intent);
             }
         });
