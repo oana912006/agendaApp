@@ -36,24 +36,35 @@
         android:id="@+id/txt_desc"
         android:layout_below="@id/txt_name_first"
         android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/img_avatar"
+
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txt_time"
+        android:layout_marginRight="10dp"
         android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/icon_star"
+        android:src="@drawable/star_dark"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/icon_edit"
+        android:layout_toLeftOf="@+id/txt_time"
+        android:src="@drawable/edit_dark"
+        android:layout_marginRight="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

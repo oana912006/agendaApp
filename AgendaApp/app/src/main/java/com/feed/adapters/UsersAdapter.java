@@ -47,6 +47,7 @@ public class UsersAdapter extends ArrayAdapter<User> implements Filterable {
 		private TextView txtNameFirst;
 		private TextView txtNameLast;
 		private TextView txtDescription;
+		private TextView txtTime;
 		private ImageView imgAvatar;
 		private ImageView imgEdit;
 		private ImageView imgStar;
@@ -75,6 +76,8 @@ public class UsersAdapter extends ArrayAdapter<User> implements Filterable {
 					.findViewById(R.id.icon_edit);
 			holder.imgStar = (ImageView) v
 					.findViewById(R.id.icon_star);
+			holder.txtTime = (TextView) v
+					.findViewById(R.id.txt_time);
 
 			v.setTag(holder);
 		} else {
@@ -90,6 +93,9 @@ public class UsersAdapter extends ArrayAdapter<User> implements Filterable {
 					.placeholder(R.drawable.ic_launcher)
 					.transform(new RoundedCornersTransform())
 					.into(holder.imgAvatar);
+
+			holder.txtTime.setText("15:38");
+			holder.txtDescription.setText("some description");
 		}
 
 		return v;
