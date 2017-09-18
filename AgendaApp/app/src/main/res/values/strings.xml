@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Agenda App</string>
     <string name="users">Users</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
 </resources>

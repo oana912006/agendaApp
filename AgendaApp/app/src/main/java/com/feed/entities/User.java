@@ -217,7 +217,7 @@ public class User implements Serializable {
         }
     }
 
-    class Location  implements Serializable {
+    public class Location  implements Serializable {
         private String street, city, state, postcode;
 
         public String getStreet() {
